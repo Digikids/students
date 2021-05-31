@@ -1,0 +1,38 @@
+:root {
+  --digikidsDeepBlue: rgb(4, 132, 172);
+  --digikidsLightBlue: rgb(4, 172, 236);
+  --digikidsPink: rgb(204, 44, 128);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+button {
+  border-radius: 1000px;
+  outline: none;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:active,
+a:focus,
+button:active,
+button:focus {
+  outline: 0;
+  outline-style: none;
+  -moz-outline-style: none;
+}
