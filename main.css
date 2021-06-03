@@ -1,7 +1,11 @@
 :root {
-  --digikidsDeepBlue: rgb(4, 132, 172);
+  --digikidsDeepBlue: rgb(0, 107, 139);
   --digikidsLightBlue: rgb(4, 172, 236);
   --digikidsPink: rgb(204, 44, 128);
+  --digikidsLightPink: rgb(255 98 180);
+  --transparentBlack: rgba(0, 0, 0, 0.7);
+  --white: rgb(255, 255, 255);
+  --borderRadius: 10px;
 }
 
 html,
@@ -18,7 +22,7 @@ body {
 }
 
 button {
-  border-radius: 1000px;
+  border-radius: var(--borderRadius);
   outline: none;
   border: none;
 }
@@ -37,6 +41,37 @@ button:focus {
   -moz-outline-style: none;
 }
 
+nav {
+  padding: 10px;
+  width: 100%;
+  background-color: var(--digikidsLightPink);
+}
+
+nav button {
+  height: 40px;
+  font-size: 1.5em;
+  padding: 0 10px;
+  min-width: 50%;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--digikidsDeepBlue);
+  text-align: center;
+  padding: 10px;
+  color: var(--white);
+  font-weight: 600;
+  left: 1px;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: var(--digikidsLightPink);
+}
+
 .introSection {
   background-image: url(./digikidsBackground.jpeg);
   background-size: cover;
@@ -46,16 +81,15 @@ button:focus {
   justify-content: center;
   align-items: center;
   padding: 50px 0;
-  
 }
 
 .introTextWrap {
-  background: rgba(0, 0, 0, 0.55);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: var(--transparentBlack);
+  box-shadow: 0 8px 32px 0 var(--transparentBlack);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--borderRadius);
+  border: 1px solid var(--transparentBlack);
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -63,18 +97,19 @@ button:focus {
   flex-direction: column;
   padding: 50px;
   margin: 30px;
-  color: white;
+  color: var(--white);
 }
 
 .introTextWrap h1 {
   font-size: 4em;
 }
 
-.introTextWrap h2{
-    font-size: 2em;
+.introTextWrap h2 {
+  font-size: 2em;
 }
 
-.introTextWrap p{
-    padding-top: 10px;
-    font-size: 1.3em;
+.introTextWrap p {
+  padding-top: 10px;
+  font-size: 1.3em;
+  font-weight: 600;
 }
