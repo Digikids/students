@@ -27,7 +27,7 @@ button {
   border: none;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
 
@@ -65,7 +65,6 @@ nav button {
   text-transform: uppercase;
   font-weight: 600;
 }
-
 
 nav button u {
   text-decoration-color: var(--digikidsLightBlue);
@@ -145,4 +144,59 @@ footer a:hover {
   box-shadow: 0 8px 32px 0 var(--transparentBlack);
   border-radius: var(--borderRadius);
   border: 1px solid var(--transparentBlack);
+}
+
+.sidebar {
+  width: 450px;
+  max-width: 500px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--white);
+  border-left: 1px solid var(--transparentBlack);
+  box-shadow: 0 8px 32px 0 var(--transparentBlack);
+  padding: 20px;
+}
+
+.sidebar h5 {
+  background: var(--digikidsDeepBlue);
+  color: white;
+  padding: 10px;
+  margin: 2px 0;
+}
+
+.sidebar ul {
+  background: var(--digikidsDeepBlue);
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+.sidebar li {
+  color: var(--white);
+  background: var(--digikidsDeepBlue);
+  display: block;
+  float: left;
+  padding: 8px 10px;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  width: 100%;
+  margin: 2px 0;
+}
+
+.sidebar li:hover,
+.sidebar li:focus-within,
+.sidebar h5:hover {
+  background: var(--digikidsLightBlue);
+  cursor: pointer;
 }
