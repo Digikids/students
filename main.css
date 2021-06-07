@@ -5,6 +5,7 @@
   --digikidsLightPink: rgb(255 98 180);
   --transparentBlack: rgba(0, 0, 0, 0.7);
   --white: rgb(255, 255, 255);
+  --transparentWhite: rgba(255, 255, 255, 0.9);
   --borderRadius: 10px;
 }
 
@@ -153,10 +154,10 @@ footer a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: var(--white);
+  background-color: var(--transparentWhite);
   border-left: 1px solid var(--transparentBlack);
   box-shadow: 0 8px 32px 0 var(--transparentBlack);
-  padding: 20px;
+  padding: 100px 20px 20px;
 }
 
 .sidebar h5 {
@@ -166,37 +167,55 @@ footer a:hover {
   margin: 2px 0;
 }
 
-.sidebar ul {
-  background: var(--digikidsDeepBlue);
+.sidebar li {
   list-style: none;
-  margin: 0;
-  padding-left: 0;
-  visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  left: 0;
-  display: none;
 }
 
-.sidebar li {
+.dropdown {
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  display: none;
+  padding: 8px 10px;
+  float: right;
+  width: 70%;
+  box-shadow: 0 8px 32px 0 var(--transparentBlack);
+}
+
+.dropdown li {
   color: var(--white);
   background: var(--digikidsDeepBlue);
   display: block;
-  float: left;
   padding: 8px 10px;
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
   width: 100%;
-  margin: 2px 0;
+  border-bottom: 1px solid var(--digikidsLightBlue);
 }
 
-.sidebar li:hover,
-.sidebar li:focus-within,
-.sidebar h5:hover {
+.dropdown li:hover,
+.sidebar ul li:hover h5 {
   background: var(--digikidsLightBlue);
   cursor: pointer;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.course,
+.ageGroup {
+  padding: 20px 0;
+}
+
+.sidebar ul li:hover > ul,
+.sidebar ul li:focus-within > ul,
+.sidebar ul li ul:hover,
+.sidebar ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
 }
