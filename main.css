@@ -148,7 +148,7 @@ footer a:hover {
 }
 
 .sidebar {
-  width: 450px;
+  width: 100%;
   max-width: 500px;
   height: 100vh;
   position: absolute;
@@ -218,4 +218,33 @@ footer a:hover {
   visibility: visible;
   opacity: 1;
   display: block;
+}
+
+.close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.close button {
+  box-shadow: 0 0 30px 1px var(--digikidsLightPink);
+  padding: 6px 15px;
+  color: var(--digikidsPink);
+  border: 0.5px solid var(--transparentBlack);
+  font-weight: 600;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.closeX {
+  background-color: var(--digikidsPink);
+  color: var(--transparentWhite);
+  border-radius: 100%;
+  padding: 16px;
+  margin-right: -16px;
+}
+
+.close button:hover {
+  background-color: var(--digikidsPink);
+  color: var(--white);
 }
