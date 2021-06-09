@@ -1,3 +1,4 @@
-export function openSelector(hello) {
-  console.log("all good", hello);
+export function openSelector(sidebar, closeBtn, sidebarValue, closeBtnValue) {
+  sidebar.style.right = sidebarValue;
+  closeBtn.style.right = closeBtnValue;
 }
