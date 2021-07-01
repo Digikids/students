@@ -168,12 +168,28 @@ footer a:hover {
 }
 
 .card {
-  width: 200px;
-  height: 250px;
+  width: 220px;
   background-color: var(--digikidsLightPink);
   box-shadow: 0 8px 32px 0 var(--transparentBlack);
   border-radius: var(--borderRadius);
   border: 1px solid var(--transparentBlack);
+}
+
+.cardImage {
+  height: 200px;
+  background-color: white;
+  border-radius: var(--borderRadius);
+  border: 1px solid var(--transparentBlack);
+  margin: 10px;
+}
+
+.cardText {
+  margin: 10px;
+  text-align: center;
+  background-color: white;
+  border-bottom-left-radius: var(--borderRadius);
+  border-bottom-right-radius: var(--borderRadius);
+  padding: 5px;
 }
 
 .sidebar {
