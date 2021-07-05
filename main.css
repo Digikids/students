@@ -194,7 +194,7 @@ footer a:hover {
 
 .sidebar {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -211,6 +211,10 @@ footer a:hover {
   color: white;
   padding: 10px;
   margin: 2px 0;
+  font-size: 1.5em;
+  border-radius: var(--borderRadius);
+  border-bottom-right-radius: 0;
+  transition: all 0.2s ease;
 }
 
 .sidebar li {
@@ -219,15 +223,13 @@ footer a:hover {
 
 .dropdown {
   margin: 0;
-  visibility: hidden;
-  opacity: 0;
-  width: 100%;
+  height: 0;
   transition: all 0.5s ease;
-  display: none;
   padding: 8px 10px;
   float: right;
   width: 70%;
   box-shadow: 0 8px 32px 0 var(--transparentBlack);
+  overflow: hidden;
 }
 
 .dropdown li {
@@ -261,9 +263,7 @@ footer a:hover {
 .sidebar ul li:focus-within > ul,
 .sidebar ul li ul:hover,
 .sidebar ul li ul:focus {
-  visibility: visible;
-  opacity: 1;
-  display: block;
+  height: fit-content;
 }
 
 .close {
