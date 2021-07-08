@@ -196,7 +196,7 @@ footer a:hover {
   width: 100%;
   max-width: 400px;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -100%;
   background-color: var(--transparentWhite);
@@ -204,6 +204,7 @@ footer a:hover {
   box-shadow: 0 8px 32px 0 var(--transparentBlack);
   padding: 100px 20px 20px;
   transition: all 0.5s ease;
+  z-index: 2;
 }
 
 .sidebar h5 {
@@ -305,4 +306,19 @@ footer a:hover {
   top: 0;
   width: 100%;
   right: 0;
+}
+
+.sidebarUnderlay {
+  display: none;
+  background-color: var(--transparentBlack);
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+
+.sidebarUnderlay:hover {
+  cursor: zoom-out;
 }
