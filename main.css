@@ -13,6 +13,7 @@
 html,
 body {
   padding: 0;
+  padding-top: calc(var(--navHeight) / 2);
   margin: 0;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -54,6 +55,10 @@ nav {
   display: flex;
   height: var(--navHeight);
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 8px 32px 0 var(--transparentBlack);
 }
 
 nav img {
@@ -320,5 +325,5 @@ footer a:hover {
 }
 
 .sidebarUnderlay:hover {
-  cursor: zoom-out;
+  cursor: pointer;
 }
