@@ -125,6 +125,9 @@ footer a {
 footer a:hover {
   color: var(--digikidsLightPink);
 }
+footer p {
+  padding: 5px;
+}
 
 .introSection {
   background-image: url(./digikidsBackground.jpeg);
@@ -329,4 +332,21 @@ footer a:hover {
 
 .sidebarUnderlay:hover {
   cursor: pointer;
+}
+
+.filter {
+  float: right;
+  background-color: var(--digikidsLightBlue);
+  color: var(--white);
+  padding: 7px 30px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+
+.filter:hover{
+  background-color: var(--digikidsDeepBlue);
 }
