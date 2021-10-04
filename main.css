@@ -2,7 +2,7 @@
   --digikidsDeepBlue: rgb(0, 107, 139);
   --digikidsLightBlue: rgb(4, 172, 236);
   --digikidsPink: rgb(204, 44, 128);
-  --digikidsLightPink: rgb(255 98 180);
+  --digikidsLightPink: rgb(255, 98, 180);
   --transparentBlack: rgba(0, 0, 0, 0.7);
   --white: rgb(255, 255, 255);
   --transparentWhite: rgba(255, 255, 255, 0.9);
@@ -35,7 +35,7 @@ button:hover {
 }
 
 a {
-  color: inherit;
+  color: var(--digikidsLightBlue);
   text-decoration: none;
 }
 
@@ -77,6 +77,8 @@ nav button {
   overflow: hidden;
   width: 300px;
   text-align: center;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .hoverTxt {
@@ -175,8 +177,14 @@ footer p {
 }
 
 .cards {
-  margin-top: -40px;
   padding: 0 30px 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 70px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: -40px auto 10px auto;
 }
 
 .card {
@@ -188,10 +196,11 @@ footer p {
 }
 
 .cardImage {
+  overflow: hidden;
   height: 240px;
   background-color: white;
   border-radius: var(--borderRadius);
-  border: 2px solid var(--digikidsPink);
+  border: 5px solid var(--digikidsLightBlue);
   margin: 10px;
 }
 
@@ -349,4 +358,13 @@ footer p {
 
 .filter:hover {
   background-color: var(--digikidsDeepBlue);
+}
+
+.projectImg {
+  margin-left: -2%;
+  max-width: 105%;
+}
+
+.hide {
+  display: none;
 }
