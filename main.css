@@ -189,7 +189,7 @@ footer p {
 
 .card {
   width: 220px;
-  background-color: var(--digikidsLightPink);
+  background-color: var(--digikidsLightBlue);
   box-shadow: 0 8px 32px 0 var(--transparentBlack);
   border-radius: var(--borderRadius);
   border: 1px solid var(--transparentBlack);
@@ -200,7 +200,7 @@ footer p {
   height: 240px;
   background-color: white;
   border-radius: var(--borderRadius);
-  border: 5px solid var(--digikidsLightBlue);
+  border: 5px solid var(--white);
   margin: 10px;
 }
 
